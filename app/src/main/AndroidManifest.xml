@@ -25,7 +25,8 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_sign_in"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".SignInLoadingActivity"></activity>
+        <activity android:name=".SignInLoadingActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

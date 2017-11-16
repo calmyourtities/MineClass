@@ -15,9 +15,10 @@ public class SignInLoadingActivity extends AppCompatActivity {
         loginThread = new Thread(new Runnable() {
             @Override
             public void run() {
-                android.os.SystemClock.sleep(3000);
+                android.os.SystemClock.sleep(1000);
                 SignInActivity.ERROR_STATE = SignInActivity.ERROR_STATES.PASSWORD_INCORRECT;
-                goBack();
+                //goBack();
+                startActivity(new Intent(getApplicationContext(), ChatActivity.class));
             }
         });
 
